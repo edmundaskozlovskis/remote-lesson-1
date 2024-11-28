@@ -1,0 +1,105 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    gap: 30px;
+}
+.col {
+    width: 50%;
+}
+.col img {
+    width: 100%;
+}
+.navigation {
+    margin-top: 20px;
+}
+.navigation img {
+    width: 120px;
+}
+.navigation .row {
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul {
+    list-style-type: none;
+}
+.menu a {
+    border: solid 2px black;
+    background-color: black;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.menu a:hover {
+    background-color: white;
+    color: black;
+}
+.header-block {
+    margin-top: 60px;
+}
+.header-block .col:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-block h1 {
+    margin-bottom: 20px;
+    font-size: 54px;
+}
+.header-block h2 {
+    color: silver;
+    margin-bottom: 20px;
+}
+.header-block a {
+    background-color: black;
+    color: white;
+    border: solid 2px black;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.header-block a:hover {
+    background-color: white;
+    color: black;
+}
+.header-block ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.header-block span {
+    display: block;
+}
+.header-block span strong {
+    text-transform: uppercase;
+}
+.info, .characteristic {
+    padding-top: 70px;
+}
+.info h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+.info p {
+    font-size: small;
+}
+.characteristic ul {
+    padding-top: 30px;
+}
+.characteristic ul li {
+    display: flex;
+}
+.characteristic ul li p {
+    width: 50%;
+    font-size: smaller;
+}
+.characteristic ul li:first-child {
+    background-color: black;
+    color: white;
+}
