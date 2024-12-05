@@ -1,6 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
 .container {
-    width: 1200px;
+    max-width: 1224px;
     margin: 0 auto;
+    padding: 0 12px;
 }
 .row {
     display: flex;
@@ -9,7 +13,9 @@
 .col {
     width: 50%;
 }
-.header-block .col img {
+.header-block .col img,
+.info .col img,
+.characteristic .col img {
     width: 100%;
 }
 .navigation {
@@ -24,6 +30,8 @@
 }
 .menu ul {
     list-style-type: none;
+    display: flex;
+    gap: 10px;
 }
 .menu a {
     border: solid 2px black;
@@ -36,6 +44,9 @@
 .menu a:hover {
     background-color: white;
     color: black;
+}
+.menu .icon {
+    display: none;
 }
 .header-block {
     margin-top: 60px;
@@ -107,7 +118,8 @@
     max-width: 420px;
 }
 .form-block img {
-    max-width: 600px;
+    /* max-width: 600px; */
+    max-height: 424px;
 }
 .form-bike {
     display: none;
@@ -197,4 +209,58 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+
+.footer .social-box {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+.footer .row {
+    align-items: center;
+}
+.footer .phone-block a {
+    display: block;
+}
+.footer .phone-block {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.footer .phone-block a:first-child {
+    margin-bottom: 12px;
+}
+.footer-bg {
+    background-color: #f3f3f3;
+    margin-top: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu ul {
+        display: none;
+        position: absolute;
+        top: 52px;
+        right: 0;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .navigation .row {
+        flex-direction: row;
+    }
+    .col {
+        width: 100%;
+    }
+    .menu .icon {
+        display: block;
+    }
+    .menu .responsive {
+        display: block;
+    }
+    .menu {
+        position: relative;
+    }
+    .menu a {
+        display: block;
+        margin-bottom: 2px;
+    }
 }

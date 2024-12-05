@@ -12,6 +12,7 @@
     </style>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container navigation" id="navigation">
@@ -20,14 +21,23 @@
                 <img src="images/istockphoto-854733622-612x612.jpg" alt="Logo image">
             </a>
             <div class="menu">
-                <ul>
+                <ul class="topnav" id="myTopnav">
                     <li>
                         <a href="#header-block">Header Block</a>
                     </li>
                     <li>
                         <a href="#info">Info</a>
                     </li>
+                    <li>
+                        <a href="#chareacteristic">Chareacteristic</a>
+                    </li>
+                    <li>
+                        <a href="#form-block">Form</a>
+                    </li>
                 </ul>
+                <a href="#" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -216,22 +226,29 @@
             </form>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <a href="#">Konfidecialismas</a>
-            </div>
-            <div class="col">
-                <div class="social-box">
-                    <a href="#">
-                        <img width="28" height="28" src="/images/instagram.png" alt="Instagram icon">
-                    </a>
-                    <a href="">
-                        <img width="28" height="28" src="/images/facebook.png" alt="facebook">
-                    </a>
+    <div class="footer-bg">
+        <div class="container footer" id="footer">
+            <div class="row">
+                <div class="col">
+                    <a href="#">Konfidecialismas</a>
+                </div>
+                <div class="col">
+                    <div class="social-box">
+                        <a href="#">
+                            <img width="28" height="28" src="/images/instagram.png" alt="Instagram icon">
+                        </a>
+                        <a href="">
+                            <img width="28" height="28" src="/images/facebook.png" alt="facebook">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="phone-block">
+                        <a href="tel:+37064028496"><img width="28" height="28" src="/images/phone-call.png" alt="Phone Icon"> +370 640 28496</a>
+                        <a href="mailto:edmundas.kozlovskis@gmail.com"><img width="28" height="28" src="/images/email.png" alt="Email Icon"> edmundas.kozlovskis@gmail.com</a>
+                    </div>
                 </div>
             </div>
-            <div class="col"></div>
         </div>
     </div>
     <script>
@@ -267,6 +284,14 @@
         // x[slideIndex-1].style.display = "block";
         // setTimeout(carousel, 2000); // Change image every 2 seconds
         // }
+        function myFunction() {
+           var x  = document.getElementById('myTopnav')
+            if (x.className === 'topnav') {
+                x.classList += ' responsive'
+            }   else {
+                x.classList = 'topnav'
+            }
+        }
     </script>
 </body>
 </html>
