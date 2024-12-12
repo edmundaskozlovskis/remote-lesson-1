@@ -18,7 +18,7 @@
     <div class="container navigation" id="navigation">
         <div class="row">
             <a href="#navigation">
-                <img src="images/istockphoto-854733622-612x612.jpg" alt="Logo image">
+                <img src="images/istockphoto-854733622-612x612.jpg" alt="Logo image" loading="lazy">
             </a>
             <div class="menu">
                 <ul class="topnav" id="myTopnav">
@@ -52,8 +52,8 @@
                 </div>
             </div>
             <div class="col w3-content w3-display-container">
-                <img class="mySlides" src="images/L-Train-Grey-1.webp" alt="Dviračio foto">
-                <img class="mySlides" src="images/ZeetaMaxElectricBlue.webp" alt="Dviracio foto2">
+                <img class="mySlides" src="images/L-Train-Grey-1.webp" alt="Dviračio foto" loading="lazy">
+                <img class="mySlides" src="images/ZeetaMaxElectricBlue.webp" alt="Dviracio foto2" loading="lazy">
 
                 <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -81,7 +81,13 @@
     <div class="container info" id="info">
         <div class="row">
             <div class="col">
-                <img src="images/Hyper-Bicycle-Men-s-29-Explorer-Mountain-Bike-Hard-Tail-Blue_3e93bdb8-f247-4ae2-898a-e03fe12a5472.c6b499258d504157384035a890ee022e.webp" alt="Info image">
+                <!-- <div class="info-img"></div> -->
+                <!-- <img src="https://res.cloudinary.com/dc2u2hjhz/image/upload/w_666,h_666/v1621712847/Hyper-Bicycle-Men-s-29-Explorer-Mountain-Bike-Hard-Tail-Blue_3e93bdb8-f247-4ae2-898a-e03fe12a5472.c6b499258d504157384035a890ee022e_mqqjbj.jpg" alt="Sample Image"> -->
+                <!-- <img src="images/Hyper-Bicycle-Men-s-29-Explorer-Mountain-Bike-Hard-Tail-Blue_3e93bdb8-f247-4ae2-898a-e03fe12a5472.c6b499258d504157384035a890ee022e.webp" alt="Info image"> -->
+                <picture>
+                    <source media="(min-width:600px)" srcset="https://res.cloudinary.com/dc2u2hjhz/image/upload/w_566,h_566/v1621712847/Hyper-Bicycle-Men-s-29-Explorer-Mountain-Bike-Hard-Tail-Blue_3e93bdb8-f247-4ae2-898a-e03fe12a5472.c6b499258d504157384035a890ee022e_mqqjbj.webp">
+                    <img src="https://res.cloudinary.com/dc2u2hjhz/image/upload/w_366,h_366/v1621712847/Hyper-Bicycle-Men-s-29-Explorer-Mountain-Bike-Hard-Tail-Blue_3e93bdb8-f247-4ae2-898a-e03fe12a5472.c6b499258d504157384035a890ee022e_mqqjbj.webp" alt="Flowers" style="width:auto;" loading="lazy">
+                </picture>
             </div>
             <div class="col">
                 <div>
@@ -184,7 +190,7 @@
                 </ul>
             </div>
             <div class="col">
-                <img src="images/features-road-bike.webp" alt="Charakteristikos image">
+                <img src="images/features-road-bike.webp" alt="Charakteristikos image" loading="lazy">
             </div>
         </div>
     </div>
@@ -200,7 +206,7 @@
                     <label>
                         <input type="radio" name="radio" checked value="silver-bike">
                         <div class="form-bike">
-                            <img src="/images/Hyper-Bicycle-Men-s-29-Explorer-Mountain-Bike-Hard-Tail-Blue_3e93bdb8-f247-4ae2-898a-e03fe12a5472.c6b499258d504157384035a890ee022e.webp" alt="Pirmas paveiksliukas">
+                            <img src="/images/Hyper-Bicycle-Men-s-29-Explorer-Mountain-Bike-Hard-Tail-Blue_3e93bdb8-f247-4ae2-898a-e03fe12a5472.c6b499258d504157384035a890ee022e.webp" alt="Pirmas paveiksliukas" loading="lazy">
                             <p>300 €.</p>
                         </div>
                         <div class="form-radio-style radio-silver"></div>
@@ -208,7 +214,7 @@
                     <label>
                         <input type="radio" name="radio" value="red-bike">
                         <div class="form-bike">
-                            <img src="/images/istockphoto-854733622-612x612.jpg" alt="Antras paveiksliukas">
+                            <img src="/images/istockphoto-854733622-612x612.jpg" alt="Antras paveiksliukas" loading="lazy">
                             <p>200 €.</p>
                         </div>
                         <div class="form-radio-style radio-red"></div>
@@ -216,7 +222,7 @@
                     <label>
                         <input type="radio" name="radio" value="white-bike">
                         <div class="form-bike">
-                            <img src="/images/ZeetaMaxElectricBlue.webp" alt="Trecias paveiksliukas">
+                            <img src="/images/ZeetaMaxElectricBlue.webp" alt="Trecias paveiksliukas" loading="lazy">
                             <p>150 €.</p>
                         </div>
                         <div class="form-radio-style radio-white"></div>
@@ -235,17 +241,17 @@
                 <div class="col">
                     <div class="social-box">
                         <a href="#">
-                            <img width="28" height="28" src="/images/instagram.png" alt="Instagram icon">
+                            <img width="28" height="28" src="/images/instagram.png" alt="Instagram icon" loading="lazy">
                         </a>
                         <a href="">
-                            <img width="28" height="28" src="/images/facebook.png" alt="facebook">
+                            <img width="28" height="28" src="/images/facebook.png" alt="facebook" loading="lazy">
                         </a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="phone-block">
-                        <a href="tel:+37064028496"><img width="28" height="28" src="/images/phone-call.png" alt="Phone Icon"> +370 640 28496</a>
-                        <a href="mailto:edmundas.kozlovskis@gmail.com"><img width="28" height="28" src="/images/email.png" alt="Email Icon"> edmundas.kozlovskis@gmail.com</a>
+                        <a href="tel:+37064028496"><img width="28" height="28" src="/images/phone-call.png" alt="Phone Icon" loading="lazy"> +370 640 28496</a>
+                        <a href="mailto:edmundas.kozlovskis@gmail.com"><img width="28" height="28" src="/images/email.png" alt="Email Icon" loading="lazy"> edmundas.kozlovskis@gmail.com</a>
                     </div>
                 </div>
             </div>

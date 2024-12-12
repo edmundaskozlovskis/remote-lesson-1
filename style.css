@@ -58,7 +58,7 @@ html {
 }
 .header-block h1 {
     margin-bottom: 20px;
-    font-size: 54px;
+    font-size: 5vw;
 }
 .header-block h2 {
     color: silver;
@@ -99,6 +99,12 @@ html {
 }
 .info p {
     font-size: small;
+}
+.info .info-img {
+    width: 585px;
+    height: 585px;
+    background-color: blueviolet;
+    background-image: url('images/blue_bicycle.jpeg');
 }
 .characteristic ul {
     padding-top: 30px;
@@ -262,5 +268,32 @@ html {
     .menu a {
         display: block;
         margin-bottom: 2px;
+    }
+    .header-block h1 {
+        font-size: 8vw;
+    }
+    .header-block ul {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .info .info-img {
+        width: 100%;
+        height: 366px;
+        background-image: url('images/blue-bycicle-small.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #form-block .form-label-box {
+        margin-bottom: 464px;
+    }
+    #form-block .form-bike {
+        top: 400px;
+    }
+    #form-block img {
+        width: 100%;
+    }
+    .footer .row {
+        text-align: center;
+        padding-top: 20px;
     }
 }
